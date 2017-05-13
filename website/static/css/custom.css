@@ -1,0 +1,357 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 100%auto;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+.carousel-inner > .item > img,{
+height: 100px;
+width: 75% !important;
+margin: auto;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    position:fluid;
+}
+.trans{
+  opacity:0.8
+    }
+
+.opak{
+ opacity:1;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.img-top{
+    display:block;
+    block-align:center;
+    horizontal-align:center;
+    height: auto;
+    width:150px !important;
+    margin:auto;
+}
+
+.img-full {
+    height: 300px !important;
+    width:auto;
+    float:left;
+    margin: auto;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.footer{
+  position:relative;
+
+}
+@media screen and (max-width:945px){
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.txtintro {
+font-size: small;
+text-align: center;
+}
+
+
+.itembox {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: rgba(255,255,255,0.8);
+    height: 270px !important;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: rgba(255,255,255,0.8);
+    
+}
+
+.maxHeight{
+    max-height:149.8px !important;
+}
+.rouge{
+    color-background:#5cb85c;
+    color-font:#5cb85c;
+    font-color:#5cb85c;
+    background-color:#5cb85c;
+}
+
+
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.description{
+    text-align: left;
+    block-align:center;
+    vertical-align: middle;
+    margin-left:15px;
+    margin-right:15px;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    marging-top:50%;
+
+}
+
+.top{
+    margin-top:-25px;
+}
+
+btnGamme{
+   padding-left:30px;
+
+}
+
+.prix{
+    padding-right:30px;
+}
+
+.hid{
+    visibility:hidden;
+}
+
+.titre{
+    padding-left: 30px;
+
+}
+.butntab{
+    display:block!important;
+    }
+.butnordi{
+display:none!important;
+}
+
+@media screen and (min-width:885px){
+    .gg{
+        display:none;
+    }
+    .go{
+        display:block;
+    }
+
+    .butntab{
+        display:none!important;
+    }
+    .butnordi{
+    display:block!important;
+    }
+}
+
+.img-prod {
+    display: inline-block;
+    block-align:center;
+    position: fluid;
+    max-width: 250px;
+    max-height: 100px;
+    width:80px;
+    height: 80px;
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:75px;
+}
+
+.boutn{
+    margin: -135px 60px;
+}
+
+.btn.btn-default {
+    color: #5cb85c;
+    background-color: #5cb85c;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E0E0E0);
+    border-color: #CCCCCC #CCCCCC #CCCCCC;
+
+
+}
+.btn.btn-default:hover {
+    color: #5cb85c;
+    background-color: #E0E0E0;
+    background-image: linear-gradient(to bottom, #E0E0E0, #E0E0E0);
+    border-color: #CCCCCC #CCCCCC #CCCCCC;
+}
+
+.panier{
+    margin-right: 20px;
+}
+
+.vert{
+
+    background-color: #5cb85c !important;
+
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+footer p {
+    margin: 0;
+    padding: 50px 0;
+}
+
+
+
+@media (min-width: 885px)  {
+
+   .navbar-header {
+        display: none !important;
+    }
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0 ;
+        width:100% !important;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+        min-height: 0;
+        max-width: 100%;
+        width: 100%!important;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.8);
+    }
+
+    .nav>li>a {
+        padding: 10px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        padding:10px;
+        font-size: 1.20em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+

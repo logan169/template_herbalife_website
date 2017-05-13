@@ -1,0 +1,92 @@
+{% extends "skeleton.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="box ">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">Contact
+                </h2>
+                <hr>
+            </div>
+
+ 
+
+            <div class="col-md-1"></div>
+            <div class="col-md-4 text-center"" >
+                <img class="img-responsive" style='margin: 0 auto;' src="{{url_for ('static',filename='img/fitnessProf.jpg')}}" alt=''>
+                <div class="text-center">
+                    <h3 >Jame Léfort</h3>
+                    <h3 ><small>Coach Herbalife</small></h3>
+                    <p>Cellulaire:
+                        <strong>01 23 45 67 89</strong>
+                    </p>
+                    <p>Email:
+                        <strong><label href="mailto:name@example.com">jamelefort@fitness.com</label></strong>
+                    </p>
+                    <p>Skype:
+                        <strong>Jame Léfort</strong>
+                    </p>
+                    <p>Facebook:
+                        <strong><a href=''>fitnessclub</a></strong>
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-4 gg ">
+                    <hr><hr>
+                </div>
+                <div class="col-md-8 go">
+                </div>
+                <div class='text-center' style='margin: 0 auto;'>
+
+                    <h3>Club herbalife</h3>
+                    <p>40 rue de la viabert</p>
+                    <p>Lyon, 69006</p>
+                </div>
+
+                <div class="google-maps text-center">
+                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+                    <iframe  width="400" height="300" frameborder="0" style="border:0" allowfullscreen src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.2425376262086!2d4.8646515155675845!3d45.76632937910563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea86b75937fb%3A0x80a491d5affd1d0b!2s40+Rue+de+la+Viabert%2C+69006+Lyon%2C+France!5e0!3m2!1sfr!2sca!4v1451710630260"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="box">
+        <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center">Contactez moi</h2>
+            <hr>
+            <form role="form"  method="POST">
+                <div class="row">
+                    <div class="form-group col-lg-4">
+                        <label>Nom</label>
+                        <input name='nom' type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Email</label>
+                        <input name= 'mail' type="email" class="form-control">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group col-lg-12">
+                        <label>Message</label>
+                        <textarea name='message' class="form-control" rows="6"></textarea>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <input type="hidden" name="save" value="contact">
+                        <button type="submit" name='envoi' class="btn btn-default">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

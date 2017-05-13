@@ -1,0 +1,47 @@
+
+{% extends "skeleton.html" %}
+{% block head %}
+{{ super() }}
+<link href="{{url_for ('static',filename='css/login.css')}}" rel="stylesheet" media="screen">
+
+
+{% endblock %}
+{% block content %}
+<style>
+    .butntab{display:none !important;}
+    .butnordi{display:none !important;}
+</style>
+
+<div class="container">
+    <div class="boxSign">
+        <form class="form-signin" role="form" method="post">
+            <h2 class="form-signin-heading" >Connectez vous</h2>
+            <br>
+
+
+
+
+            <label for="inputUsername" class="sr-only">Email</label>
+            <input name="inputUsername" id="inputUsername" class="form-control" placeholder="Username" required="required" autofocus="" type="text">
+            <br>
+            <label for="inputPassword" class="sr-only">mot de passe</label>
+            <input name="inputPassword" id="inputPassword" class="form-control" autocomplete="off" placeholder="Mot de passe" required="required" type="password">
+            <br>
+            {%if erreurAut==True %}
+
+            <h4 class="red">Username ou mot de passe erronés</h4>
+            <br>
+            {% endif %}
+
+            <a href='/signUp'><!--ajouter lien page sign in-->
+                <h5 text-align:center;>Cliquez ici pour créer un compte</h5>
+            </a>
+            <h5 ><a href="/recuperationCompte">Mot de passe oublié?</a></h5>
+            <br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Envoi</button>
+        </form>
+    </div>
+</div>
+
+
+{% endblock content%}

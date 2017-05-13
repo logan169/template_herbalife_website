@@ -1,0 +1,86 @@
+{% extends "produit-skeleton.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block produit %}
+
+<div class="row">
+    <div class='box'>
+        <div class="container-fluid">
+            {% for item in produits %}
+            {% if 'description'  in item %}<div class="col-lg-12 "> {% else %}<div class="col-sm-6 col-md-4">{% endif  %}
+            <div class="itembox" >
+                <div class="row ">
+                    <br>
+                    <div class="thumbnail-fluid opak maxHeight">
+                        <div class="row top responsive">
+                            <h4 class="prix pull-right">{{item['prix']}} €</h4>
+                            <h4 class="titre"> <a href="/product/{{item['titre'].replace(' ','_')}}">{{item['titre']}}</a></h4>
+                        </div>
+                        <br>
+                        <div class="txt-blk intro-text">
+                            <div class="caption-fluid ">
+                                <div class="row responsive">
+                                
+                                    {% if 'description' in item %}
+                                    <div class="prix pull-right">
+                                        <!--<form class="form-signin" role="form" method="post" accept-charset="UTF-8 character">
+                                            <input id="username" name="username" class="hidden form-control" value="log@hotmail.com" type="text" placeholder="username">
+                                            <input id="produit" name="produit" class="hidden form-control"  value="{{item['titre']}}" type="text" placeholder="produit">
+                                            
+                                            <button type="submit" onclick="addItemToCart()" class="btn btn-success pull-right btn-xs"><span class="glyphicon glyphicon-plus-sign"></span> Ajouter au panier</button>
+                                            
+                                        </form>-->
+                                    </div>
+                                </div>
+                                {% endif  %}
+
+                                
+                                <div class="description " >
+                                    
+                                    <img class='img-prod ' alt="" src="{{url_for ('static',filename='img/herb_France/')+item['photo']}}">
+                                    
+
+<br>
+                                    <p class ="txtintro">{{item['intro']}}</p>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <!--
+                            {% if 'description' not in item %}
+
+                            <div class="row">
+                                <div class="prix pull-right">
+                                    <form class="form-signin" role="form" method="post" accept-charset="UTF-8 character">
+                                        <input id="username" name="username" class="hidden form-control" value="log@hotmail.com" type="text" placeholder="username">
+                                        <input id="produit" name="produit" class="hidden form-control"  value="{{item['titre']}}" type="text" placeholder="produit">
+                                        
+                                        <button type="submit" onclick="addItemToCart()" class="btn btn-success pull-right btn-xs"><span class="glyphicon glyphicon-plus-sign"></span> Ajouter au panier</button>
+                                        
+                                    </form>
+                                </div>
+                                {% endif  %}
+
+                            </div>
+                            -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+
+
+
+    {% endblock produit %}

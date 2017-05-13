@@ -1,0 +1,37 @@
+{% extends "skeleton.html" %}
+{% block head %}
+{{ super() }}
+<link href="{{url_for ('static',filename='css/recuperationCompte.css')}}" rel="stylesheet" media="screen">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="boxSign">
+        <form class="form-signin" method="post" role="form">
+            <h2 class="form-signin-heading" >Identifiez vous</h2>
+
+            <label for="inputFirstName" class="sr-only">Prénom</label>
+            <input value="" name="inputFirstName" id="inputFirstName" class="form-control" placeholder="Prénom" required="required" autofocus="" type="text">
+            <br>
+
+            <label for="inputName" class="sr-only">Nom</label>
+            <input value="" name="inputName" id="inputName" class="form-control" placeholder="Nom" required="required" autofocus="" type="text">
+            <br>
+
+            <label for="inputUsername" class="sr-only">Username</label>
+            <input value="" name="inputUsername" id="inputUsername" class="form-control" placeholder="Username" required="required" autofocus="" type="text">
+            <br>
+
+            <label for="inputEmail" class="sr-only">Email</label>
+            <input value="" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email" required="required" autocomplete="off" autofocus="" type="email">
+            <br>
+            {%if message %}
+            <div class="red" text-align:center;>
+                <h4 >{{message}}</h4>
+            </div>
+            {% endif %}
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Envoi</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

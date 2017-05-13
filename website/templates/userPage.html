@@ -1,0 +1,40 @@
+{% extends "skeleton.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+
+<div class="box">
+    <h3>Produits dans votre panier:</h3>
+    <div class="container-fluid">
+        {% for item in produits %}
+
+
+        <div class="col-lg-12">
+            <div class="box">
+                <a href="/product/{{item['titre'].replace(' ','_')}}"><h6>{{item['titre']}}</h6></a>
+                <h6>{{item['prix']}}</h6>
+                <h6>{{item['count']}}</h6>
+                <div class="description " >
+                    <img class='img-prod ' alt="" src="{{url_for ('static',filename='img/herb_France/')+item['photo']}}" >
+
+                    <div class="row">
+                        <div class="prix pull-right">
+                            <form class="form-signin" role="form" method="post" accept-charset="UTF-8 character">
+                                <input id="username" name="username" class="hidden form-control" value="log@hotmail.com" type="text" placeholder="username">
+                                <input id="produit" name="produit" class="hidden form-control"  value="{{item['titre']}}" type="text" placeholder="produit">
+                                <button type="submit" onclick="removeItemFromCart()" class="btn btn-danger pull-right btn-xs"><span class="glyphicon glyphicon-minus-sign"></span> Retirer du panier</button>
+                            </form>
+                        </div>
+
+                    <h6>{{item['intro']}}</h6>
+                </div>
+
+
+            </div>
+
+            {% endfor  %}
+        </div>
+    </div>
+
+    {% endblock content%}

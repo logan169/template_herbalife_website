@@ -1,0 +1,90 @@
+{% extends "skeleton.html" %}
+{% block head %}
+{{ super() }}
+<link href="{{url_for ('static',filename='css/login.css')}}" rel="stylesheet" media="screen">
+
+
+{% endblock %}
+{% block content %}
+<style>
+    .butntab{display:none !important;}
+    .butnordi{display:none !important;}
+</style>
+
+<div class="container">
+    <div class="boxSign">
+    <form class="form-signin" method="post" role="form">
+        <h2 class="form-signin-heading" >Inscrivez vous</h2>
+
+        {%if dictValues %}
+
+        <label for="inputFirstName" class="sr-only">Prénom</label>
+        <input value="" name="inputFirstName" id="inputFirstName" class="form-control" placeholder="Prénom" required="required" autofocus="" type="text">
+        <br>
+        <label for="inputName" class="sr-only">Nom</label>
+        <input value="" name="inputName" id="inputName" class="form-control" placeholder="Nom" required="required" autofocus="" type="text">
+        <br>
+
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input value="" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email" required="required" autocomplete="off" autofocus="" type="email">
+        <br>
+
+        <label for="inputEmail2" class="sr-only">Retapez votre email</label>
+        <input value="" name="inputEmail2" id="inputEmail2" class="form-control" placeholder="Retapez votre email" autocomplete="off" required="required" autofocus="" type="email">
+        <br>
+
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input value="" name="inputUsername" id="inputUsername" class="form-control" placeholder="Username" required="required" autofocus="" type="text">
+        <br>
+
+        <label for="inputPassword" class="sr-only">mot de passe</label>
+        <input value="" name="inputPassword" id="inputPassword" class="form-control" placeholder="Mot de passe" autocomplete="off" required="required" type="text">
+        <br>
+        <label for="inputPassword2" class="sr-only">Retapez votre mot de passe</label>
+        <input value="" name="inputPassword2" id="inputPassword2" class="form-control" placeholder="Retapez votre mot de passe" autocomplete="off" required="required"  type="text">
+        <br>
+        {%else%}
+        <label for="inputFirstName" class="sr-only">Nom</label>
+        <input value="" name="inputFirstName" id="inputFirstName" class="form-control" placeholder="Prénom" required="required" autofocus="" type="text">
+        <br>
+        <label for="inputName" class="sr-only">Nom</label>
+        <input value="" name="inputName" id="inputName" class="form-control" placeholder="Nom" required="required" autofocus="" type="text">
+        <br>
+
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input value="" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email" required="required" autocomplete="off" autofocus="" type="email">
+        <br>
+
+        <label for="inputEmail2" class="sr-only">Retapez votre email</label>
+        <input value="" name="inputEmail2" id="inputEmail2" class="form-control" placeholder="Retapez votre email" autocomplete="off" required="required" autofocus="" type="email">
+        <br>
+
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input value="" name="inputUsername" id="inputUsername" class="form-control" placeholder="Username" required="required" autofocus="" type="text">
+        <br>
+
+        <label for="inputPassword" class="sr-only">mot de passe</label>
+        <input value="" name="inputPassword" id="inputPassword" class="form-control" placeholder="Mot de passe" autocomplete="off" required="required" type="password">
+        <br>
+        <label for="inputPassword2" class="sr-only">Retapez votre mot de passe</label>
+        <input value="" name="inputPassword2" id="inputPassword2" class="form-control" placeholder="Retapez votre mot de passe" autocomplete="off" required="required"  type="password">
+        <br>
+        {% endif %}
+
+        {%if message %}
+        <div class="red" text-align:center;>
+        <h4 >{{message}}</h4>
+        </div>
+        {% endif %}
+        {%if mdpOublie %}
+        <h5 ><a href="/recuperationCompte">Mot de passe oublié?</a></h5>
+        <br>
+        {% endif %}
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Envoi</button>
+    </form>
+</div>
+</div>
+
+
+{% endblock content%}

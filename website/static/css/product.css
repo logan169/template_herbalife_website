@@ -1,0 +1,49 @@
+
+correspondance trouvée pour img dans le sélecteur .img-full
+correspondance trouvée pour img dans l'attribut background=/static/img/slide-4.jpg de l'élément BODY au chemin /html/body
+correspondance trouvée pour img dans le sélecteur .img-full
+correspondance trouvée pour img-res dans le sélecteur .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img
+body {
+    padding-top: 70px;
+}
+.slide-image {
+    width: 100%;
+}
+.carousel-holder {
+    margin-bottom: 30px;
+}
+.carousel-control, .item {
+    border-radius: 4px;
+}
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+.caption h4 {
+    white-space: nowrap;
+}
+.thumbnail img {
+    width: 100%;
+}
+.ratings {
+    color: #d17581;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.thumbnail {
+    padding: 0;
+}
+.thumbnail .caption-full {
+    color: #333;
+    padding: 9px;
+}
+footer {
+    margin: 50px 0;
+}
+
+.img-prod{
+display: block;
+
+    width:100px !important;
+    margin:auto;
+}

@@ -1,0 +1,16 @@
+{% extends "skeleton.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<!-- Display flashed messages -->
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+
+{% for message in messages %}
+<div class="alert-success alert">{{ message }}</div>
+{% endfor %}
+
+{% endif %}
+{% endwith %}
+{% endblock content %}

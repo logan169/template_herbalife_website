@@ -1,0 +1,68 @@
+{% extends "skeleton.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+
+<div class="row">
+    <div class="box">
+
+        <div class="row visible-md center-block">
+            <div class="text-center center-block" >
+                <hr>
+                <h2 class="intro-text">Gammes de produits</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row visible-lg text-center center-block">
+            <div class="center-block" >
+                <hr>
+                <h2 class="intro-text">Gammes de produits</h2>
+                <hr>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default trans text-center" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                    <a class="navbar-brand"  href="#">Gammes de produits</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse-navbar-collapse " id="navbar-collapse-2">
+                    <ul class="nav navbar-nav ">
+                        <li>
+                            <a href="/product/remise_en_forme">Remise en forme</a>
+                        </li>
+                        <li>
+                            <a href="/product/controle_de_poids">Contrôle de poids</a>
+                        </li>
+                        <li>
+                            <a href="/product/sport_&_vitalite">Sport & vitalité</a>
+                        </li>
+                        <li>
+                            <a href="/product/soin_du_corps">Soin du corps</a>
+                        </li>
+                        <li>
+                            <a href="/product/Nutrition_Ciblee">Nutrition Ciblée</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+{% block produit %}
+{% endblock produit %}
+
+{% endblock content %}
