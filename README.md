@@ -28,11 +28,19 @@ Once the server is up, type in your browser's URL bar the URL displayed in the t
 ![GitHub Logo](/picts/3.png)
 ![GitHub Logo](/picts/5.png)
 ![GitHub Logo](/picts/4.png)
-![GitHub Logo](/picts/6.png)
-![GitHub Logo](/picts/7.png)
-![GitHub Logo](/picts/8.png)
-![GitHub Logo](/picts/9.png)
-![GitHub Logo](/picts/10.png)
-![GitHub Logo](/picts/11.png)
-![GitHub Logo](/picts/12.png)
 ![GitHub Logo](/picts/13.png)
+![GitHub Logo](/picts/12.png)
+![GitHub Logo](/picts/11.png)
+![GitHub Logo](/picts/10.png)
+![GitHub Logo](/picts/9.png)
+![GitHub Logo](/picts/8.png)
+![GitHub Logo](/picts/7.png)
+![GitHub Logo](/picts/6.png)
+
+
+
+
+
+
+
+
