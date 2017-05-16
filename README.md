@@ -18,7 +18,7 @@ After installing dependencies and editing config parameter in server_vanilla.py:
 
 #### How to use it (Front-end)
 
-Once the server is up, type in your browser's URL bar the URL displayed in the terminal after executing last command.
+Once the server is up, type in your browser's URL bar the URL displayed in the terminal after executing the last command.
 
 #### Website pictures
 
