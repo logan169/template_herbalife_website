@@ -1,7 +1,7 @@
 # herbalife website
 ## adaptatif template website
 
-This repo contains an adaptatif template website for a herbalife seller. It is written with Python2, bootstrap, Flask,Flask-mail and Jinja2.
+This repo contains an adaptative template website for a herbalife seller. It is written with Python2, bootstrap, Flask,Flask-mail and Jinja2.
 
 #### Dependancies
 - Python 2
@@ -11,7 +11,7 @@ This repo contains an adaptatif template website for a herbalife seller. It is w
 ### Initialization
 
 #### To launch the server (Back-end)
-After installing dependencies, and editing config parameter in server_vanilla.py:
+After installing dependencies and editing config parameter in server_vanilla.py:
 
         $ chmod +x server_vanilla.py
         $ ./server_vanilla.py
